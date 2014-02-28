@@ -1,0 +1,53 @@
+﻿<div class="container">
+    <h1>{{action}} Notes!</h1>
+    <p></p>
+    <form role="form">
+        <div class="row">
+            <div class="form-group col-lg-1" data-ng-class="{error: form.Description.$invalid}">
+                <label for="Description">Note Title</label>
+                <input type="text" class="form-control" data-ng-model="note.Description" id="Description"/>
+            </div>
+        </div>
+
+  
+         <div class="row">
+            <div class="form-group col-lg-1" data-ng-class="{error: form.Body.$invalid}">
+                <label for="Body">Note in detail</label>
+                 <textarea  class="form-control" id="Body" name="textarea"></textarea>
+             
+            </div>
+        </div>
+            
+        <div class="row">
+            <div class="form-group col-lg-1 ">
+                <button data-ng-click="save()" type="submit" class="btn btn-default">{{action}}</button>
+                <button type="submit" class="btn btn-default">Cancel</button>
+            </div>
+             
+        </div>
+    </form>
+</div>
+
+<!-- <form name="loginForm" novalidate 
+     data-ng-app="LoginApp" data-ng-controller="LoginController" data-ng-submit="login()">
+     <div class="form-group">
+       <input class="form-control" name="username" type="text" 
+         placeholder="Username" required data-ng-model="session.username" />
+       <span class="help-block" 
+         data-ng-show="loginForm.username.$error.required">Required</span>
+     </div>
+     <div class="form-group">
+       <input class="form-control" name="password" type="password" 
+         placeholder="Password" required data-ng-model="session.password" />
+       <span class="help-block" 
+         data-ng-show="loginForm.password.$error.required">Required</span>
+     </div>
+     <div class="form-group">
+         <button type="submit" class="btn btn-primary pull-right" 
+           value="Login" title="Login" data-ng-disabled="!loginForm.$valid">
+           <span>Login</span>
+         </button>
+     </div>
+   </form>-->
+
+    
